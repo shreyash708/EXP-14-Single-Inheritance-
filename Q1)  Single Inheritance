@@ -1,0 +1,34 @@
+//name- shreyash sonar
+//PRN - 24070123164
+//div - B3
+
+#include<iostream>
+#include<string>
+using namespace std;
+class Book {
+    public:
+    string title = "Harry Potter";
+    void author(){
+        cout<< "Author : J K Rolling "<<endl;
+    }
+};
+class   Novel : public Book {
+    public:
+    string genre = "Fiction";
+
+};
+int main(){
+    Novel n1;
+    n1.author();
+    cout<<"Title:"<<n1.title<< endl;
+    cout << "Genre:"<<n1.genre << endl;
+    return 0;
+
+}
+
+/*
+Output :
+Author: J K Rolling
+Title: Harry Potter 
+Genre: Fiction
+*/
